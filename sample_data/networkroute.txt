@@ -1,6 +1,0 @@
-Computer A, B, D, E
-Computer B, C
-Computer C, D, E
-Computer D, A, B, E
-Computer E, C, B
-Message C, B

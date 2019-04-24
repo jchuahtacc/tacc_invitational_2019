@@ -1,5 +1,0 @@
-LoneStar5, 12500, 51000
-Stampede2, 18000, 51000
-Wrangler, 14000, 51000
-Maverick, 25000, 50000
-Hikari, 8000, 10000
