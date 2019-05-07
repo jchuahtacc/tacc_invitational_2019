@@ -1,11 +1,10 @@
-# input = open("../student/classifyimages.txt", "r")
-input = open("../sample_data/classifyimages2.txt", "r")
+input = open("../sample_data/classifyimages.dat", "r")
 lines = input.readlines()
 systems = []
 TOTAL_SUs = 50000
 
 for line in lines:
-    parts = [s.strip() for s in line.split(',')]
+    parts = [s.strip() for s in line.split()]
     systems.append({'name': parts[0], 'images': int(parts[1]), 'sus': int(parts[2])})
 
 def max_images(systems, idx, balance, nbr_jobs):

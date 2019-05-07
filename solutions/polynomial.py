@@ -1,6 +1,4 @@
-# input = open("../student/classifyimages.txt", "r")
-# input = open("../sample_data/polynomial.txt", "r")
-input = open("../sample_data/polynomial2.txt", "r")
+input = open("../sample_data/polynomial.dat", "r")
 lines = input.readlines()
 polynomial = lines[0]
 value = int(lines[1].split('=')[1])

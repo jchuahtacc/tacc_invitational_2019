@@ -1,10 +1,10 @@
-input = open("../sample_data/oversubscribed.txt", "r")
+input = open("../sample_data/oversubscribed.dat", "r")
 lines = input.readlines()
-hour_totals = [{"Stampede2": 4200, "LoneStar5": 1252, "Hikari": 432} for i in range(1, 24)]
+hour_totals = [{"STAMPEDE2": 4200, "LONESTAR5": 1252, "HIKARI": 432} for i in range(1, 24)]
 oversubscribed = []
 
 for line in lines[1:]:
-    parts = [l.strip() for l in line.split(',')]
+    parts = [l.strip() for l in line.split()]
     system = parts[0]
     start_hour = int(parts[1].split(':')[0])
     end_hour = start_hour + int(parts[2])

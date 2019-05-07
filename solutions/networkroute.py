@@ -1,13 +1,12 @@
-# input = open("../student/networkroute.txt", "r")
-input = open("../sample_data/networkroute2.txt", "r")
+input = open("../sample_data/networkroute.dat", "r")
 lines = input.readlines()
 computers = []
 names = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4}
 source = 0
 dest = 0
 for line in lines:
-    parts = line.split(',')
-    if line.startswith('Message'):
+    parts = line.split()
+    if line.startswith('MESSAGE'):
         source = names[parts[0][-1]]
         dest = names[parts[1].strip()]
     else:

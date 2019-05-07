@@ -1,4 +1,4 @@
-input = open("../sample_data/queens.txt", "r")
+input = open("../sample_data/queens.dat", "r")
 lines = input.readlines()
 row_nums = {'A':1, 'B':2, 'C':3, 'D':4, 'E':5, 'F':6, 'G':7, 'H':8}
 queens = [l.strip() for l in lines[1:]]
